@@ -1,0 +1,64 @@
+BEGINEIXOS
+Eixo	Nome				Arquivo de eixo		Tipo
+0000	U:Imp				MakePar.atf			User
+0001	U:Dir				MakePar.atf			User
+0002	U:Esq				MakePar.atf			User
+0003	U:Elev				MakePar.atf			User
+ENDEIXOS
+
+BEGINMENU
+Nome							Menu		X		Y	W	H
+Parametros do produto			MProd		12		10	640	155
+Comandos						MCMD		12		170	640	70
+Registro de eventos				MREG		12		250	640	250
+ENDMENU
+
+MProd
+Nome							End		bit		Opcoes		Tipo		Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+Nome							0x0		0		0			LEDIT		NOFAT	Produto			10	20	150	20	465	20
+Largura total da Matriz			0x0		0		0			LEDIT		NOFAT	100				10	45	150	20	100	20
+Comprimento total da Matriz		0x0		0		0			LEDIT		NOFAT	25				280	45	200	20	100	20
+Numero de Colunas				0x0		0		0			LEDIT		NOFAT	5				10	70	150	20	100	20
+Numero de Linhas				0x0		0		0			LEDIT		NOFAT	5				345	70	135	20	100	20
+Posicao de impressao			0x0		0		0			LEDIT		NOFAT	60				10	95	150	20	100	20
+Mensagem						0x0		0		MENIMP		LCOMBOBOX	NOFAT	1Linha			10	120	150	20	100	180
+Altura de impressao				0x0		0		0			LEDIT		NOFAT	25				345	95	135	20	100	20
+Direcao de impressao			0x0		0		MENDIR		LCOMBOBOX	NOFAT	Horizontal		330	120	150	20	100	180
+ENDPAR
+
+MCMD
+Nome							End		bit		Opcoes		Tipo		Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+Criar							0x0		0		0			BOTAOC		NOFAT	MPARSALVA		70	20	250	40	90	180
+Abrir							0x0		0		0			BOTAOC		NOFAT	MPARABRIR		330	20	250	40	90	180
+ENDPAR
+
+MREG
+Nome							End		bit		Opcoes		Tipo	Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+ 								0x0		0		0			LOGC	NOFAT	Log...			15	28	615	205	90	180
+ENDPAR
+
+
+BEGINOPCOES
+
+MENIMP
+1Linha	2Linhas
+
+MENDIR
+Horizontal	Vertical
+ENDOPCOES
+
+BEGINMPAR
+Tipo	Valor
+BOTAOC	MPARSALVA
+BOTAOC	MPARABRIR
+ENDMPAR
+
+MPARSALVA
+Eixo		Menu		Nome
+0x00		0x00		SALVAUSER
+END
+
+MPARABRIR
+Eixo		Menu		Nome
+0x00		0x00		SALVAUSER
+END

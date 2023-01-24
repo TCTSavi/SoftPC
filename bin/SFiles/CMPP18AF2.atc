@@ -1,0 +1,110 @@
+BEGINMENU
+Nome							Menu		X		Y	W	H
+Configuracao do eixo X			MCONFX		10		30	335	397
+Configuracao Adicional			MCONFX2		350		195	325	75
+Leitura							MLeitura	350		30	325	155
+Teste e verificacao				MTESTE		10		435	480	200
+Parametros ocultos							MOCULTO		0		0	0	0
+ENDMENU
+
+MCONFX
+Nome							End		bit		Opcoes		Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Porta Serial					0x0		0		GetComOp	LCOMBOBOX	NOFAT		COM:NC			10	23	220	20	90	180
+Numero do canal X				0x0		0		DefCanal	LEDIT		NOFAT		01				10	50	220	20	90	20
+Numero de pulso do giro X		0x62	0		PGiro		LEDIT		NOFAT		0400			10	75	220	20	90	20
+Janela de protecao do giro X	0x63	0		0			LEDIT		NOFAT		0050			10	100	220	20	90	180
+Deslocamento/Giro do Motor X	0x0		0		MENFAT		LCOMBOBOX	NOFAT		81.28			10	127	220	20	90	180
+Giro X com funcao de protecao	0x60	12		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	154	220	20	90	180
+Giro X com funcao de correcao	0x60	13		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	181	220	20	90	180
+Logica do start externo X		0x60	5		MENLOG		LCOMBOBOX	NOFAT		Aberto			10	208	220	20	90	20
+Valor da posicao da referencia	0x65	0		0			LEDIT		NOFAT		0050			10	233	220	20	90	20
+Velocidade para referencia X	0x67	0		0			LEDIT		NOFAT		0500			10	258	220	20	90	20
+Aceleracao para referencia X	0x66	0		0			LEDIT		NOFAT		5000			10	283	220	20	90	180
+Reducao da corrente em repouso	0x60	14		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	310	220	20	90	180
+Referencia pelo start externo	0x60	7		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	337	220	20	90	180
+Modo Turbo X					0x68	2		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	364	220	20	90	180
+ENDPAR
+
+MCONFX2
+Nome							End		bit		Opcoes		Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Eixo transvessal				0x68	6		MENLIG		LCOMBOBOX	NOFAT		Desligado		10	25	150	20	90	0
+ENDPAR
+
+MLeitura
+Nome							End		bit		Opcoes		Tipo			Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Posicao atual: 					0x30	0		0			LABEL			MMFAT200	0				10	25	150	20	50	0
+Referenciado 					0x49	0		STATTF		STATUSBIT		NOFAT		False			10	50	150	20	0	0
+Posicao executada				0x49	1		STATTF		STATUSBIT		NOFAT		False			10	75	150	20	0	0
+Referenciando 					0x49	2		STATTF		STATUSBIT		NOFAT		False			10	100	150	20	0	0
+Direcao							0x49	3		STATTF		STATUSBIT		NOFAT		False			10	125	150	20	0	0
+Aceleracao						0x49	4		STATTF		STATUSBIT		NOFAT		False			170	50	150	20	0	0
+Desaceleracao					0x49	5		STATTF		STATUSBIT		NOFAT		False			170	75	150	20	0	0
+Vago		 					0x49	6		STATTF		STATUSBIT		NOFAT		False			170	100	150	20	0	0
+Erro		 					0x49	7		FLAGERROR	STATUSBIT		NOFAT		False			170	125	150	20	0	0
+FlagErrorOut	 				0x69	9		ERROROUT	STATUSBIT		NOFAT		False			0	0	0	0	0	0
+ENDPAR
+
+MTESTE
+Nome							End		bit		Opcoes		Tipo				Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Teste e verificacao				0x0		0		0			TESTEVERIFICACAO	NOFAT		50				10	23	0	0	0	0
+ENDPAR
+
+MOCULTO
+Nome											End		bit		Opcoes		Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Sinal de start, velocidade						0x45	0		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal de start/outro, velocidade				0x45	1		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal do zero index								0x45	2		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal do zero index								0x45	3		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal de impressao								0x45	4		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Erro na com1									0x45	5		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mudanca de parametros no instante errado		0x45	6		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit08 invalida						0x45	7		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Erro de parametros de movimento passo a passo	0x45	8		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit09 invalida						0x45	9		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit10 invalida						0x45	10		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit11 invalida						0x45	11		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit12 invalida						0x45	12		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit13 invalida						0x45	13		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit14 invalida						0x45	14		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit15 invalida						0x45	15		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+ENDPAR
+
+BEGINOPCOES
+
+MENLIG
+Desligado	Ligado
+
+MENDIR
+Avanco	Retorno
+
+MENHAB	
+Desabilitado	Habilitado
+
+MENFAT	
+304.8	211.7	182.9	162.6	121.92	101.6	81.28	60.96	50.80	41.487	27.093	1.00
+
+MENMOD
+Continuo	Passo a Passo
+
+MENLOG
+Aberto	Fechado
+
+MENSEN
+Supervisor	Manutencao	Operacao	Protegido
+
+BOTOP
+NOOP0	Start	NOOP1	NOOP2	Pausa	NOOP3	Stop	NOOP4	NOOP5	NOOP6	NOOP7	NOOP8	Manual	NOOP8	NOOP8	NOOP8	Print
+
+STATTF
+False	True
+
+ERRORTF
+False	True
+
+FLAGERROR
+False	True
+
+ENDOPCOES
+
+
+

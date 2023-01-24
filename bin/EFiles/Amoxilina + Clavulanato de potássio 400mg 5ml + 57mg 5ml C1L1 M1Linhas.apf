@@ -1,0 +1,211 @@
+BEGINPEIXO
+Eixo			Nome						Arquivo de eixo
+0000			Eixo Imp				CMPP18AF2.atf
+0001			Eixo Dir				CMPP18AF2.atf
+0002			Eixo Esq				CMPP18AF2.atf
+ENDPEIXO
+
+BEGINPCF
+//Nome				Arquivo de eixo
+//Eixo Imp			CMPP18AF2.atf
+//----------------------------------------------
+//Parametro de Movimento				Valor
+//----------------------------------------------
+Posicao inicial							0010
+Posicao final							0300
+Aceleracao de avanco					2000
+Aceleracao de retorno					2000
+Velocidade de avanco					0200
+Velocidade de retorno					0200
+Deslocamento Esq/Dir					0500
+
+//----------------------------------------------
+//Parametros de Impressao				Valor
+//----------------------------------------------
+Numero de mensagem no avanco			0002
+Numero de mensagem no retorno			0002
+Primeira mensagem no avanco				0030
+Primeira mensagem no retorno			0250
+Ultima mensagem no avanco				0250
+Ultima mensagem no retorno				0030
+Mensagem reversa ligada					Retorno
+
+//----------------------------------------------
+//Configuracao do Ciclo					Valor
+//----------------------------------------------
+Retardo no start automatico				0.001
+Retardo no start externo				0.001
+Start automatico no avanco				Desligado
+Start automatico no retorno				Desligado
+Modo de trabalho do eixo				Continuo
+
+//----------------------------------------------
+//Configuracao da impressora			Valor
+//----------------------------------------------
+Logica do sinal de impressao			Aberto
+Largura do sinal dimpressao				0.020
+Reversao de mensagem via serial			Desligado
+Selecao de mensagem via serial			Desligado
+
+//----------------------------------------------
+//Intertravamento: dois eixos e pas/pas	Valor
+//----------------------------------------------
+Antecipacao da saida de start			0001
+Saida de Start no avanco				Desligado
+Saida de Start no retorno				Desligado
+Entrada de start entre eixos			Desligado
+Referencia pelo start externo			Desligado
+Start pelo teclado e externo X			Ligado
+Retardo no sinal de impressao			0.001
+Retardo para inversao dmensagem			0.001
+Start automatico passo/passo			Desligado
+Saida de start passo a passo			Desligado
+
+//----------------------------------------------
+//Comandos								Valor
+//----------------------------------------------
+Start									Start
+Stop									Stop
+Pausa									Pausa
+Manual									Manual
+Print									Print
+
+//----------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome				Arquivo de eixo
+//Eixo Dir			CMPP18AF2.atf
+//----------------------------------------------
+//Parametro de Movimento				Valor
+//----------------------------------------------
+Posicao inicial							0020
+Posicao final							0300
+Aceleracao de avanco					2000
+Aceleracao de retorno					2000
+Velocidade de avanco					0200
+Velocidade de retorno					0200
+Deslocamento Esq/Dir					0500
+
+//----------------------------------------------
+//Parametros de Impressao				Valor
+//----------------------------------------------
+Numero de mensagem no avanco			0002
+Numero de mensagem no retorno			0002
+Primeira mensagem no avanco				0030
+Primeira mensagem no retorno			0250
+Ultima mensagem no avanco				0250
+Ultima mensagem no retorno				0030
+Mensagem reversa ligada					Retorno
+
+//----------------------------------------------
+//Configuracao do Ciclo					Valor
+//----------------------------------------------
+Retardo no start automatico				0.001
+Retardo no start externo				0.001
+Start automatico no avanco				Desligado
+Start automatico no retorno				Desligado
+Modo de trabalho do eixo				Continuo
+
+//----------------------------------------------
+//Configuracao da impressora			Valor
+//----------------------------------------------
+Logica do sinal de impressao			Aberto
+Largura do sinal dimpressao				0.020
+Reversao de mensagem via serial			Desligado
+Selecao de mensagem via serial			Desligado
+
+//----------------------------------------------
+//Intertravamento: dois eixos e pas/pas	Valor
+//----------------------------------------------
+Antecipacao da saida de start			0001
+Saida de Start no avanco				Desligado
+Saida de Start no retorno				Desligado
+Entrada de start entre eixos			Desligado
+Referencia pelo start externo			Desligado
+Start pelo teclado e externo X			Ligado
+Retardo no sinal de impressao			0.001
+Retardo para inversao dmensagem			0.001
+Start automatico passo/passo			Desligado
+Saida de start passo a passo			Desligado
+
+//----------------------------------------------
+//Comandos								Valor
+//----------------------------------------------
+Start									Start
+Stop									Stop
+Pausa									Pausa
+Manual									Manual
+Print									Print
+
+//----------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome				Arquivo de eixo
+//Eixo Esq			CMPP18AF2.atf
+//----------------------------------------------
+//Parametro de Movimento				Valor
+//----------------------------------------------
+Posicao inicial							0020
+Posicao final							0300
+Aceleracao de avanco					2000
+Aceleracao de retorno					2000
+Velocidade de avanco					0200
+Velocidade de retorno					0200
+Deslocamento Esq/Dir					0500
+
+//----------------------------------------------
+//Parametros de Impressao				Valor
+//----------------------------------------------
+Numero de mensagem no avanco			0002
+Numero de mensagem no retorno			0002
+Primeira mensagem no avanco				0030
+Primeira mensagem no retorno			0250
+Ultima mensagem no avanco				0250
+Ultima mensagem no retorno				0030
+Mensagem reversa ligada					Retorno
+
+//----------------------------------------------
+//Configuracao do Ciclo					Valor
+//----------------------------------------------
+Retardo no start automatico				0.001
+Retardo no start externo				0.001
+Start automatico no avanco				Desligado
+Start automatico no retorno				Desligado
+Modo de trabalho do eixo				Continuo
+
+//----------------------------------------------
+//Configuracao da impressora			Valor
+//----------------------------------------------
+Logica do sinal de impressao			Aberto
+Largura do sinal dimpressao				0.020
+Reversao de mensagem via serial			Desligado
+Selecao de mensagem via serial			Desligado
+
+//----------------------------------------------
+//Intertravamento: dois eixos e pas/pas	Valor
+//----------------------------------------------
+Antecipacao da saida de start			0001
+Saida de Start no avanco				Desligado
+Saida de Start no retorno				Desligado
+Entrada de start entre eixos			Desligado
+Referencia pelo start externo			Desligado
+Start pelo teclado e externo X			Ligado
+Retardo no sinal de impressao			0.001
+Retardo para inversao dmensagem			0.001
+Start automatico passo/passo			Desligado
+Saida de start passo a passo			Desligado
+
+//----------------------------------------------
+//Comandos								Valor
+//----------------------------------------------
+Start									Start
+Stop									Stop
+Pausa									Pausa
+Manual									Manual
+Print									Print
+
+//----------------------------------------------
+ENDPCF
+

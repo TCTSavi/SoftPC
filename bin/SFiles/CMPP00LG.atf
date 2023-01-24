@@ -1,0 +1,143 @@
+BEGINMENU
+Nome							Menu		X		Y	W	H
+Parametro de Movimento			MMOVIM		10		30	250	180
+Parametros de Impressao			MMENSAG		10		220	325	210
+Configuracao do Ciclo			MCICLO		10		440	325	165
+Configuracao da impressora		MIMPRES		335		30	340	140
+Intertravamento para dois eixo	MINTRV		350		170	325	170
+Comandos						MCOMAND		350		340	325	80
+Leitura							MLeitura	350		420	325	155
+Envio do eixo					MBUFFER		350		583	325	50
+Parametros ocultos				MOCULTO		0		0	0	0
+ENDMENU
+
+MMOVIM
+Nome							End		bit		Opcoes	Tipo	Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Posicao inicial					0x50	0		0		LEDIT	MMFAT200	0020			10	25	150	20	75	20
+Posicao final					0x51	0		0		LEDIT	MMFAT200	0300			10	50	150	20	75	20
+Aceleracao de avanco			0x52	0		0		LEDIT	MMFAT		2000			10	75	150	20	75	20
+Aceleracao de retorno			0x53	0		0		LEDIT	MMFAT		2000			10	100	150	20	75	20
+Velocidade de avanco			0x54	0		0		LEDIT	MMFAT		0200			10	125	150	20	75	20
+Velocidade de retorno			0x55	0		0		LEDIT	MMFAT		0200			10	150	150	20	75	20
+ENDPAR
+
+MMENSAG
+Nome							End		bit		Opcoes	Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Numero de mensagem no avanco	0x56	0		0		LEDITL		NOFAT		0002			10	25	225	20	75	20
+Numero de mensagem no retorno	0x56	0		0		LEDITH		NOFAT		0002			10	50	225	20	75	20
+Primeira mensagem no avanco		0x57	0		0		LEDIT		MMFAT200	0030			10	75	225	20	75	20
+Primeira mensagem no retorno	0x58	0		0		LEDIT		MMFAT200	0250			10	100	225	20	75	20
+Ultima mensagem no avanco		0x59	0		0		LEDIT		MMFAT200	0250			10	125	225	20	75	20
+Ultima mensagem no retorno		0x5A	0		0		LEDIT		MMFAT200	0030			10	150	225	20	75	20
+Mensagem reversa ligada			0x60	9		MENDIR	LCOMBOBOX	NOFAT		Retorno			10	175	225	20	75	80
+ENDPAR
+
+MCICLO
+Nome							End		bit		Opcoes	Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Retardo no start automatico		0x5C	0		0		LEDIT		MILISEC		0.001			10	25	225	20	75	20
+Retardo no start externo		0x5D	0		0		LEDIT		MILISEC		0.001			10	50	225	20	75	20
+Start automatico no avanco		0x60	0		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	75	195	20	105	100
+Start automatico no retorno		0x60	1		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	102	195	20	105	100
+Modo de trabalho do eixo		0x60	15		MENMOD	LCOMBOBOX	NOFAT		Continuo		10	129	195	20	105	100
+ENDPAR
+
+MIMPRES
+Nome							End		bit		Opcoes	Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Logica do sinal de impressao	0x60	8		MENLOG	LCOMBOBOX	NOFAT		Aberto			10	25	225	20	90	100
+Largura do sinal dimpressao		0x5B	0		0		LEDIT		MILISEC		0.020			10	52	225	20	90	20
+Reversao de mensagem via serial	0x60	11		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	77	225	20	90	100
+Selecao de mensagem via serial	0x60	10		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	104	225	20	90	100
+ENDPAR
+
+MINTRV
+Nome							End		bit		Opcoes	Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Antecipacao da saida de start	0x5E	0		0		LEDIT		MMFAT		0001			10	25	225	20	75	20
+Saida de Start no avanco		0x60	2		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	50	210	20	90	120
+Saida de Start no retorno		0x60	3		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	77	210	20	90	120
+Entrada de start entre eixos	0x60	6		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	104	210	20	90	120
+Referencia pelo start externo	0x60	7		MENLIG	LCOMBOBOX	NOFAT		Desligado		10	131	210	20	90	120
+ENDPAR
+
+MCOMAND
+Nome							End		bit		Opcoes	Tipo	Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Start							0x69	0		BOTOP	BOTOP	NOFAT		Start			10	25	70	20	0	0
+Stop							0x69	0		BOTOP	BOTOP	NOFAT		Stop			10	50	70	20	0	0
+Pausa							0x69	0		BOTOP	BOTOP	NOFAT		Pausa			850	25	70	20	0	0
+Manual							0x69	0		BOTOP	BOTOP	NOFAT		Manual			850	50	70	20	0	0
+Print							0x69	0		BOTOP	BOTOP	NOFAT		Print			160 25	70	20	0	0
+ENDPAR
+
+MLeitura
+Nome							End		bit		Opcoes		Tipo			Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Posicao atual: 					0x30	0		0			LABEL			MMFAT200	0				10	25	150	20	50	0
+Referenciado 					0x49	0		STATTF		STATUSBIT		NOFAT		False			10	50	150	20	0	0
+Posicao executada				0x49	1		STATTF		STATUSBIT		NOFAT		False			10	75	150	20	0	0
+Referenciando 					0x49	2		STATTF		STATUSBIT		NOFAT		False			10	100	150	20	0	0
+Direcao							0x49	3		STATTF		STATUSBIT		NOFAT		False			10	125	150	20	0	0
+Aceleracao						0x49	4		STATTF		STATUSBIT		NOFAT		False			170	50	150	20	0	0
+Desaceleracao					0x49	5		STATTF		STATUSBIT		NOFAT		False			170	75	150	20	0	0
+Vago		 					0x49	6		STATTF		STATUSBIT		NOFAT		False			170	100	150	20	0	0
+Erro		 					0x49	7		FLAGERROR	STATUSBIT		NOFAT		False			170	125	150	20	0	0
+ENDPAR
+
+MBUFFER
+Nome							End		bit		Opcoes	Tipo			Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Send Buffer						0x0		0		0		COMBUFSENDBAR	NOFAT		0				10	20	70	22	230	18
+ENDPAR
+
+MOCULTO
+Nome											End		bit		Opcoes		Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Sinal de start, velocidade						0x45	0		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal de start/outro, velocidade				0x45	1		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal do zero index								0x45	2		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal do zero index								0x45	3		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Sinal de impressao								0x45	4		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Erro na com1									0x45	5		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mudanca de parametros no instante errado		0x45	6		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit08 invalida						0x45	7		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Erro de parametros de movimento passo a passo	0x45	8		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit09 invalida						0x45	9		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit10 invalida						0x45	10		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit11 invalida						0x45	11		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit12 invalida						0x45	12		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit13 invalida						0x45	13		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit14 invalida						0x45	14		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+Mascara X bit15 invalida						0x45	15		ERRORTF		ERRORBIT	NOFAT		False			0	0	0	0	0	0
+ENDPAR
+
+BEGINOPCOES
+
+MENLIG
+Desligado	Ligado
+
+MENDIR
+Avanco	Retorno
+
+MENHAB	
+Desabilitado	Habilitado
+
+MENFAT	
+101.6	81.28	60.96	50.80	41.487	27.093	1.00
+
+MENMOD
+Continuo	Passo a Passo
+
+MENLOG
+Aberto	Fechado
+
+MENSEN
+Supervisor	Manutencao	Operacao	Protegido
+
+BOTOP
+NOOP0	Start	NOOP1	NOOP2	Pausa	NOOP3	Stop	NOOP4	NOOP5	NOOP6	NOOP7	NOOP8	Manual	NOOP8	NOOP8	NOOP8	Print
+
+STATTF
+False	True
+
+ERRORTF
+False	True
+
+FLAGERROR
+False	True
+
+ENDOPCOES

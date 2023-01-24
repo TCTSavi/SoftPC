@@ -1,0 +1,260 @@
+BEGINPEIXO
+Eixo			Nome				Arquivo de eixo
+0000			C:Imp				CMPP18AF2.atc
+0001			C:Dir				CMPP18AF2.atc
+0002			C:Esq				CMPP18AF2.atc
+0003			C:Elev				CMPP18AF2.atc
+ENDPEIXO
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//C:Imp							CMPP18AF2.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							00
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Referencia pelo start externo				Ligado
+Modo Turbo X								Ligado
+
+//--------------------------------------------------
+//Leitura									Valor
+//--------------------------------------------------
+Posicao atual: 								0
+Referenciado 								False
+Posicao executada							False
+Referenciando 								False
+Direcao										False
+Aceleracao									False
+Desaceleracao								False
+Vago										False
+Erro										False
+FlagErrorOut								False
+
+//--------------------------------------------------
+//Teste e verificacao						Valor
+//--------------------------------------------------
+Teste e verificacao							50
+
+//--------------------------------------------------
+//Parametros ocultos						Valor
+//--------------------------------------------------
+Sinal de start, velocidade					False
+Sinal de start/outro, velocidade			False
+Sinal do zero index							False
+Sinal do zero index							False
+Sinal de impressao							False
+Erro na com1								False
+Mudanca de parametros no instante errado	False
+Mascara X bit08 invalida					False
+Erro de parametros de movimento passo a passo	False
+Mascara X bit09 invalida					False
+Mascara X bit10 invalida					False
+Mascara X bit11 invalida					False
+Mascara X bit12 invalida					False
+Mascara X bit13 invalida					False
+Mascara X bit14 invalida					False
+Mascara X bit15 invalida					False
+
+//--------------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//C:Dir							CMPP18AF2.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							0
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Referencia pelo start externo				Ligado
+Modo Turbo X								Ligado
+
+//--------------------------------------------------
+//Leitura									Valor
+//--------------------------------------------------
+Posicao atual: 								0
+Referenciado 								False
+Posicao executada							False
+Referenciando 								False
+Direcao										False
+Aceleracao									False
+Desaceleracao								False
+Vago										False
+Erro										False
+FlagErrorOut								False
+
+//--------------------------------------------------
+//Teste e verificacao						Valor
+//--------------------------------------------------
+Teste e verificacao							50
+
+//--------------------------------------------------
+//Parametros ocultos						Valor
+//--------------------------------------------------
+Sinal de start, velocidade					False
+Sinal de start/outro, velocidade			False
+Sinal do zero index							False
+Sinal do zero index							False
+Sinal de impressao							False
+Erro na com1								False
+Mudanca de parametros no instante errado	False
+Mascara X bit08 invalida					False
+Erro de parametros de movimento passo a passo	False
+Mascara X bit09 invalida					False
+Mascara X bit10 invalida					False
+Mascara X bit11 invalida					False
+Mascara X bit12 invalida					False
+Mascara X bit13 invalida					False
+Mascara X bit14 invalida					False
+Mascara X bit15 invalida					False
+
+//--------------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//C:Esq							CMPP18AF2.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							0
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Referencia pelo start externo				Ligado
+Modo Turbo X								Ligado
+
+//--------------------------------------------------
+//Leitura									Valor
+//--------------------------------------------------
+Posicao atual: 								0
+Referenciado 								False
+Posicao executada							False
+Referenciando 								False
+Direcao										False
+Aceleracao									False
+Desaceleracao								False
+Vago										False
+Erro										False
+FlagErrorOut								False
+
+//--------------------------------------------------
+//Teste e verificacao						Valor
+//--------------------------------------------------
+Teste e verificacao							50
+
+//--------------------------------------------------
+//Parametros ocultos						Valor
+//--------------------------------------------------
+Sinal de start, velocidade					False
+Sinal de start/outro, velocidade			False
+Sinal do zero index							False
+Sinal do zero index							False
+Sinal de impressao							False
+Erro na com1								False
+Mudanca de parametros no instante errado	False
+Mascara X bit08 invalida					False
+Erro de parametros de movimento passo a passo	False
+Mascara X bit09 invalida					False
+Mascara X bit10 invalida					False
+Mascara X bit11 invalida					False
+Mascara X bit12 invalida					False
+Mascara X bit13 invalida					False
+Mascara X bit14 invalida					False
+Mascara X bit15 invalida					False
+
+//--------------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//C:Elev							CMPP18AF2.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							0
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Referencia pelo start externo				Ligado
+Modo Turbo X								Ligado
+
+//--------------------------------------------------
+//Leitura									Valor
+//--------------------------------------------------
+Posicao atual: 								0
+Referenciado 								False
+Posicao executada							False
+Referenciando 								False
+Direcao										False
+Aceleracao									False
+Desaceleracao								False
+Vago										False
+Erro										False
+FlagErrorOut								False
+
+//--------------------------------------------------
+//Teste e verificacao						Valor
+//--------------------------------------------------
+Teste e verificacao							50
+
+//--------------------------------------------------
+//Parametros ocultos						Valor
+//--------------------------------------------------
+Sinal de start, velocidade					False
+Sinal de start/outro, velocidade			False
+Sinal do zero index							False
+Sinal do zero index							False
+Sinal de impressao							False
+Erro na com1								False
+Mudanca de parametros no instante errado	False
+Mascara X bit08 invalida					False
+Erro de parametros de movimento passo a passo	False
+Mascara X bit09 invalida					False
+Mascara X bit10 invalida					False
+Mascara X bit11 invalida					False
+Mascara X bit12 invalida					False
+Mascara X bit13 invalida					False
+Mascara X bit14 invalida					False
+Mascara X bit15 invalida					False
+
+//--------------------------------------------------
+ENDPCF
+

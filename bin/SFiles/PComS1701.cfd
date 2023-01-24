@@ -1,0 +1,151 @@
+BEGINEIXOS
+Eixo	Nome					Arquivo de eixo		Tipo
+0000	U:Imp					CMPP18AF2.atf		User
+0001	U:Dir					CMPP18AF2.atf		User
+0002	U:Esq					CMPP18AF2.atf		User
+0003	U:Elev					CMPP18AF2.atf		User
+0000	C:Imp					CMPP18AF2.atc		Config
+0001	C:Dir					CMPP18AF2.atc		Config
+0002	C:Esq					CMPP18AF2.atc		Config
+0003	C:Elev					CMPP18AF2.atc		Config
+ENDEIXOS
+
+BEGINMENU
+Nome							Menu		X		Y	W	H
+Status							MSTAT		12		10	305	60
+Controle Gerais					MCONGE		12		80	305	90
+Envio geral						MENVG		12		583	305	50
+Avisos							MWARN		12		180	305	230
+Registro de eventos				MREG		12		415	305	160
+ENDMENU
+
+MSTAT
+Nome							End		bit		Opcoes		Tipo		Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+								0x0		0		0			STATUSC		NOFAT	00000			10	22	285	28	285	20
+ENDPAR
+
+MCONGE
+Nome							End		bit		Opcoes		Tipo			Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+Iniciar							0x71	0		SET			BCMACHSTATUS	NOFAT	MPARSTART		10	25	85	25	0	0
+Parar							0x71	0		SET			BOTAOC			NOFAT	MPARSTOP		110	25	85	25	0	0
+Pausar							0x71	0		SET			BOTAOC			NOFAT	MPARPAUSE		210	25	85	25	0	0
+Manual							0x71	0		SET			BOTAOC			NOFAT	MPARMANUAL		10	55	85	25	0	0
+Cadastrar						0x71	0		SET			BOTAOC			NOFAT	MPARPROG		110	55	85	25	0	0
+Salvar							0x71	0		SET			BOTAOC			NOFAT	MPARSALVA		210	55	85	25	0	0
+ENDPAR
+
+MWARN
+Nome							End		bit		Opcoes		Tipo		Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+								0x0		0		0			LISTVIEWC	NOFAT	NULL			10	23	285	200	90	180
+ENDPAR
+
+MENVG
+Nome							End		bit		Opcoes		Tipo			Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+Send Buffer						0x0		0		0			COMBUFSENDBARC	NOFAT	0				10	24	70	20	210	18
+ENDPAR
+
+MREG
+Nome							End		bit		Opcoes		Tipo	Fator	Valor(Default)	X	Y	W1	H1	W2	H2
+ 								0x0		0		0			LOGC	NOFAT	Log...			10	23	285	120	90	100
+ENDPAR
+
+
+BEGINOPCOES
+
+MENLIG
+Desligado	Ligado
+
+MENDIR
+Avanco	Retorno
+
+MENHAB	
+Desabilitado	Habilitado
+
+MENFAT	
+101.6	81.28	60.96	50.80	41.487	27.093
+
+MENMOD
+Continuo	Passo a Passo
+
+MENLOG
+Aberto	Fechado
+
+MENSEN
+Supervisor	Manutencao	Operacao	Protegido
+
+BOTAO
+SET			RES			ENV
+
+CONFIG
+OFF
+
+SBMINMAX1
+10	100
+
+ENDOPCOES
+
+
+BEGINMPAR
+Tipo		Valor
+F_NOVO		MFNOVO
+F_ABRIR		MFABRIR
+F_SALVAR	MFSALVAR
+F_SALVARC	MFSALVARC
+F_SAIR		MFSAIR
+C_NOVO		MCNOVO
+C_ABRIR		MCABRIR
+C_SALVAR	MCSALVAR
+C_SALVARC	MCSALVARC
+BCMACHSTATUS	MPARSTART
+BOTAOC		MPARSTOP
+BOTAOC		MPARPAUSE
+BOTAOC		MPARMANUAL
+BOTAOC		MPARSALVA
+BOTAOC		MPARPROG
+ENDMPAR
+
+MPARSTART
+Page	Menu		Par
+0		MCOMAND		Manual
+0		MCOMAND		Start
+END
+
+MPARSTOP
+Page		Menu		Nome
+END
+
+MPARPAUSE
+Page		Menu		Nome
+END
+
+MPARMANUAL
+Page		Menu		Nome
+END
+
+MPARSALVA
+Page		Menu		Nome
+0			0x00		CMD_SALVAUSER
+END
+
+MPARPROG
+Page		Menu		Nome
+0			PROGRAM		MakePar.exe
+END
+
+MPARPOSX
+Page		Menu		Nome
+END
+
+MPARPOSY
+Page		Menu		Nome
+END
+
+MPARPOSZ
+Page		Menu		Nome
+END
+
+END
+
+BEGINMASCERRO
+Nome											End		bit
+ENDMASCERRO

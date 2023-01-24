@@ -1,0 +1,64 @@
+BEGINMENU
+Nome							Menu		X		Y	W	H
+Configuracao do eixo X			MCONFX		10		30	335	370
+Teste e verificacao				MTESTE		10		410	480	220
+ENDMENU
+
+MCONFX
+Nome							End		bit		Opcoes		Tipo		Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Porta Serial					0x0		0		GetComOp	LCOMBOBOX	NOFAT		COM:NC			10	23	220	20	90	180
+Numero do canal X				0x0		0		DefCanal	LEDIT		NOFAT		01				10	50	220	20	90	20
+Numero de pulso do giro X		0x62	0		PGiro		LEDIT		NOFAT		0400			10	75	220	20	90	20
+Janela de protecao do giro X	0x61	0		0			LEDIT		NOFAT		0050			10	100	220	20	90	180
+Deslocamento/Giro do Motor X	0x0		0		MENFAT		LCOMBOBOX	NOFAT		81.28			10	127	220	20	90	180
+Giro X com funcao de protecao	0x60	12		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	154	220	20	90	180
+Giro X com funcao de correcao	0x60	13		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	181	220	20	90	180
+Logica do start externo X		0x60	5		MENLOG		LCOMBOBOX	NOFAT		Aberto			10	208	220	20	90	20
+Valor da posicao da referencia	0x63	0		0			LEDIT		NOFAT		0050			10	233	220	20	90	20
+Velocidade para referencia X	0x65	0		0			LEDIT		NOFAT		0500			10	258	220	20	90	20
+Aceleracao para referencia X	0x64	0		0			LEDIT		NOFAT		5000			10	283	220	20	90	180
+Reducao da corrente em repouso	0x60	14		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	310	220	20	90	180
+Start pelo teclado e externo X	0x60	4		MENLIG		LCOMBOBOX	NOFAT		Ligado			10	335	220	20	90	180
+ENDPAR
+
+MTESTE
+Nome							End		bit		Opcoes		Tipo				Fator		Valor(Default)	X	Y	W1	H1	W2	H2
+Teste e verificacao				0x0		0		0			TESTEVERIFICACAO	NOFAT		50				10	23	0	0	0	0
+ENDPAR
+
+BEGINOPCOES
+
+MENLIG
+Desligado	Ligado
+
+MENDIR
+Avanco	Retorno
+
+MENHAB	
+Desabilitado	Habilitado
+
+MENFAT	
+101.6	81.28	60.96	50.80	41.487	27.093 1.00
+
+MENMOD
+Continuo	Passo a Passo
+
+MENLOG
+Aberto	Fechado
+
+MENSEN
+Supervisor	Manutencao	Operacao	Protegido
+
+BOTAO
+SET			RES			ENV
+
+STATTF
+False	True
+
+ERRORTF
+False	True
+
+FLAGERROR
+False	True
+
+ENDOPCOES

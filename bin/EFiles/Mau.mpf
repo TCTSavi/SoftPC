@@ -1,0 +1,15 @@
+BEGINMAKE
+//----------------------------------------------
+//Parametros do produto					Valor
+//----------------------------------------------
+Nome									Mau
+Largura total da Matriz				100
+Comprimento total da Matriz			25
+Numero de Colunas						5
+Numero de Linhas						5
+Posicao de impressao					60
+Mensagem								1Linha
+Altura de impressao					25
+Direcao de impressao					Horizontal
+//----------------------------------------------
+ENDMAKE

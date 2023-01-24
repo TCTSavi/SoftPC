@@ -1,0 +1,100 @@
+BEGINPEIXO
+Eixo			Nome				Arquivo de eixo
+0002			Config Imp				CMPP00LG.atc
+0004			EixoA2				CMPP00LG.atc
+0003			EixoA2				CMPP00LG.atc
+0001			EixoA2				CMPP00LG.atc
+ENDPEIXO
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//Config Imp							CMPP00LG.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							00
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Start pelo teclado e externo X				Ligado
+
+//--------------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//EixoA2							CMPP00LG.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							00
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Start pelo teclado e externo X				Ligado
+
+//--------------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//EixoA2							CMPP00LG.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							00
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Start pelo teclado e externo X				Ligado
+
+//--------------------------------------------------
+ENDPCF
+
+BEGINPCF
+//Nome								Arquivo de eixo
+//EixoA2							CMPP00LG.atc
+//--------------------------------------------------
+//Configuracao do eixo X					Valor
+//--------------------------------------------------
+Porta Serial								COM1
+Numero do canal X							00
+Numero de pulso do giro X					0400
+Janela de protecao do giro X				0050
+Deslocamento/Giro do Motor X				81.28
+Giro X com funcao de protecao				Ligado
+Giro X com funcao de correcao				Ligado
+Logica do start externo X					Aberto
+Valor da posicao da referencia				0050
+Velocidade para referencia X				0500
+Aceleracao para referencia X				5000
+Reducao da corrente em repouso				Ligado
+Start pelo teclado e externo X				Ligado
+
+//--------------------------------------------------
+ENDPCF
+
